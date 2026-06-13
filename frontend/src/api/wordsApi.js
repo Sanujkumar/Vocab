@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://vocab-upzp.onrender.com/api',
   timeout: 12000,
 });
-
+   
 export const addWord = (word) => api.post('/words', { word });
 
 export const getWords = () => api.get('/words');

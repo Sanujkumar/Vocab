@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://vocab-upzp.onrender.com/api',   
   timeout: 12000,
 });
 
